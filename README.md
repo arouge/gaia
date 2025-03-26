@@ -57,8 +57,6 @@ Note: The custom `SfccConnector` module is part of this project and does not nee
 
 This project is developed and tested with Python 3.6+.
 
-Configuration
-
 # Configuration
 
 ## config.cfg
