@@ -8,9 +8,38 @@ The list of dependencies will be updated as time goes but actually, the most imp
 
 Configuration
 
-config.cfg file has four parameters
+# Configuration
 
-clientId <- This is the name of the Client ID configured in Account Manager. This ID must have Account Administrator read only permission at least.
-password: The password associated with the Client ID
-amLocation: In some situations you may want to use this tool against specific Account Manager instances. hHowever, the default location should be account.demandware.com
-organizationId: is the ID of the organization for which you want to pull the user list.
+## config.cfg
+
+The application uses a configuration file (`config.cfg`) to store credentials and connection information. Make sure to set up this file correctly before running the application.
+
+### Parameters
+
+| Parameter | Description |
+|-----------|-------------|
+| `clientId` | The name of the Client ID configured in Account Manager. This ID must have Account Administrator read-only permission at minimum. |
+| `password` | The password associated with the Client ID. |
+| `amLocation` | The Account Manager instance URL to connect to. The default location is `account.demandware.com`. You may need to change this in specific deployment scenarios. |
+| `organizationId` | The ID of the organization for which you want to pull the user list. |
+
+### Example
+
+```
+clientId=your_client_id
+password=your_secure_password
+amLocation=account.demandware.com
+organizationId=your_organization_id
+```
+
+### Security Notes
+
+- Never commit this file with actual credentials to your Git repository
+- Add `config.cfg` to your `.gitignore` file
+- Consider using environment variables for sensitive information in production environments
+
+## Setup Instructions
+
+1. Create a copy of `config.cfg.template` and rename it to `config.cfg`
+2. Fill in your specific credentials and organization information
+3. Ensure the file has appropriate read permissions for the application
