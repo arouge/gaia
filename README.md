@@ -92,3 +92,94 @@ organizationId=your_organization_id
 1. Create a copy of `config.cfg.template` and rename it to `config.cfg`
 2. Fill in your specific credentials and organization information
 3. Ensure the file has appropriate read permissions for the application
+
+# User Management Tool - User Guide
+
+## Introduction
+
+This tool allows you to manage users in your Salesforce Commerce Cloud instance. It provides a simple interface to view, search, and export user information.
+
+## Accessing the Application
+
+1. Make sure the application is running
+2. Open your web browser and go to the following URL:
+   ```
+   http://localhost/
+   ```
+
+## User Interface
+
+After logging in, you'll see the "User Management" page which displays a table with user information.
+
+
+### Main Features
+
+#### Viewing Users
+
+The table displays the following information for each user:
+
+- **ID**: Unique identifier for the user
+- **Email**: User's email address
+- **First Name**: User's first name
+- **Last Name**: User's last name
+- **Display Name**: User's full name as displayed in the system
+- **Roles**: Roles assigned to the user (e.g., 'appd-dashboards', 'api-admin')
+- **Primary Organization**: Organization the user is associated with
+- **Last Login**: Date of the user's last login
+- **Status**: User account status (ENABLED, DISABLED, etc.)
+
+#### Available Actions
+
+Several actions are available via the buttons above the table:
+
+1. **Export to CSV**: Export the user list to a CSV file
+2. **Print**: Print the current user list
+3. **Manage Columns**: Choose which columns to display in the table
+
+#### Navigation and Filtering
+
+- **Display**: Choose how many entries to show per page (dropdown menu "Show")
+- **Search**: Use the search field in the top right to filter users
+- **Pagination**: Navigate between pages using the "Previous", "Next" buttons and page numbers
+
+## Step-by-Step Usage
+
+### Searching for a User
+
+1. Go to the main page at http://localhost/
+2. Use the search field in the top right
+3. Type any term (name, email, role, etc.)
+4. Results will automatically update to show only matching users
+
+### Exporting the User List
+
+1. Go to the main page at http://localhost/
+2. Click the "Export to CSV" button
+3. Select the location where you want to save the file
+4. The CSV file containing all user data will be downloaded
+
+### Customizing the Display
+
+1. Go to the main page at http://localhost/
+2. Click the "Manage Columns" button
+3. Select or deselect the columns you want to display
+4. The table display will update according to your choices
+
+## Configuration
+
+To configure the tool, make sure the `config.cfg` file is properly filled with the following information:
+
+- `clientId`: The Client ID configured in Account Manager (with read permission)
+- `password`: The password associated with the Client ID
+- `amLocation`: The Account Manager instance URL (default: account.demandware.com)
+- `organizationId`: The ID of the organization for which you want to extract the user list
+
+## Troubleshooting
+
+If you encounter issues:
+
+1. Verify that the application is running
+2. Ensure that the configuration information is correct
+3. Check that your account has the necessary permissions
+4. If the problem persists, check the application logs for more details
+
