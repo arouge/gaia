@@ -1,5 +1,5 @@
 # gaia
-A Salesforce alternative to retrieve Account Manager users with relevant information and capabilities to export the result as a CSV file.
+An alternative to retrieve Salesforce's B2C Commerce's Account Manager's users with relevant information and capabilities to export the result as a CSV file.
 
 I made this tool to supplement Salesforce B2C Commerce Account Manager missing features.
 
