@@ -99,10 +99,32 @@ organizationId=your_organization_id
 
 This tool allows you to manage users in your Salesforce Commerce Cloud instance. It provides a simple interface to view, search, and export user information.
 
-## Accessing the Application
+## Installing and Running the Application
 
-1. Make sure the application is running
-2. Open your web browser and go to the following URL:
+### Installing Dependencies
+
+Before running the application, make sure you have installed all the required dependencies:
+
+```bash
+pip install flask requests
+```
+
+### Running the Application
+
+To start the application:
+
+1. Navigate to the directory containing the application files
+2. Run the main application file using Python:
+   ```bash
+   python gaia.py
+   ```
+3. The application will start and by default will be accessible at http://localhost/
+4. You should see console output indicating that the server is running
+
+### Accessing the Application
+
+Once the application is running:
+1. Open your web browser and go to the following URL:
    ```
    http://localhost/
    ```
@@ -111,6 +133,7 @@ This tool allows you to manage users in your Salesforce Commerce Cloud instance.
 
 After logging in, you'll see the "User Management" page which displays a table with user information.
 
+![User Management Interface](user_management_interface.png)
 
 ### Main Features
 
