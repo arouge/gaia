@@ -33,3 +33,8 @@ Core improvements and features planned for the Salesforce Commerce Cloud User Ma
   - [ ] Analyze email domains used across the organization
   - [ ] Flag non-standard email domains
   - [ ] Generate domain distribution reports
+     
+## OAuth 2 Features
+- [ ] Adding user loging feature based on OAuth2
+
+
