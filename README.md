@@ -193,9 +193,9 @@ Several actions are available via the buttons above the table:
 To configure the tool, make sure the `config.cfg` file is properly filled with the following information:
 
 - `clientId`: The Client ID configured in Account Manager (with read permission)
-- `password`: The password associated with the Client ID
+- `password`: The password associated with the Client ID. Not needed when using OAuth2 version.
 - `amLocation`: The Account Manager instance URL (default: account.demandware.com)
-- `organizationId`: The ID of the organization for which you want to extract the user list
+- `organizationId`: The ID of the organization for which you want to extract the user list. To be removed in the future.
 
 ## Troubleshooting
 
